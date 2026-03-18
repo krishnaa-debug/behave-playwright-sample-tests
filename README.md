@@ -51,7 +51,5 @@ browserstack-sdk behave features/ --no-capture
 - **Custom logging:** Safe to add - doesn't interfere with SDK tracking.
 - **SDK integration:** Automatic via `browserstack-sdk behave` command.
 
----
 
-For more details, see [START_HERE.md](START_HERE.md)
 
