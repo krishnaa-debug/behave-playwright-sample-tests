@@ -1,0 +1,4 @@
+browserstack-sdk>=2.0.0
+behave>=1.2.6
+playwright>=1.40.0
+python-dotenv>=0.19.0
