@@ -51,5 +51,14 @@ browserstack-sdk behave features/ --no-capture
 - **Custom logging:** Safe to add - doesn't interfere with SDK tracking.
 - **SDK integration:** Automatic via `browserstack-sdk behave` command.
 
+## Release Notes
+### Version 1.41.0 (2026-03-12)
+🚀 **New Features**
+Added Accessibility support for Behave(Playwright)
+
+### Version 1.40.0 (2026-03-09)
+🚀 **New Features**
+Added TRA automate support for Behave(Playwright)
+
 
 
