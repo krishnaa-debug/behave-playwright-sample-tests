@@ -1,0 +1,62 @@
+# BrowserStack Configuration for Playwright + Behave Tests
+# 
+# SETUP INSTRUCTIONS:
+# 1. Update 'userName' and 'accessKey' with your BrowserStack credentials
+# 2. OR set environment variables: BROWSERSTACK_USERNAME and BROWSERSTACK_ACCESS_KEY
+# 3. For CI/CD environments, use secrets management (GitHub Secrets, Jenkins Credentials, etc.)
+
+# BrowserStack Credentials (UPDATE THESE)
+# Replace with your actual credentials from https://www.browserstack.com/accounts/settings
+userName: YOUR_USERNAME
+accessKey: YOUR_ACCESS_KEY
+
+
+# Project & Build Configuration
+projectName: Playwright_Behave_Sample
+buildName: Behave_Playwright_Build
+# Automate Platform Configuration
+# Include browser/OS combinations to test on
+platforms:
+  - browserName: chrome
+    browserVersion: latest
+    os: os x
+    osVersion: Ventura
+  # Uncomment additional platforms as needed:
+  # - browserName: firefox
+  #   browserVersion: latest
+  #   os: windows
+  #   osVersion: "11"
+  # - browserName: safari
+  #   browserVersion: latest
+  #   os: os x
+  #   osVersion: Monterey
+
+# Framework Configuration
+framework: behave
+logLevel: debug
+
+# Test Observability (Test Reporting API) - Set to true to enable O11Y dashboard
+testObservability: true
+
+# Accessibility Testing - Set to true to enable A11Y scanning
+accessibility: true
+accessibilityOptions:
+  includeIssueType:
+    advanced: false
+    bestPractice: true
+    needsReview: false
+  scannerVersion: latest
+  wcagVersion: wcag21aaa
+
+# Additional Options
+debug: true
+networkLogs: true
+parallelsPerPlatform: 1
+
+# Performance & Timeout Settings
+idleTimeout: 300
+queueTimeout: 600
+
+# Video & Artifacts
+video: true
+screenshots: true

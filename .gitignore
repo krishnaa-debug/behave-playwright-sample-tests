@@ -51,7 +51,6 @@ test_run.log
 full_test_output.log
 
 # Credentials (NEVER COMMIT)
-browserstack.yml
 browserstack.yml.bak
 credentials.json
 .env
