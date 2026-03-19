@@ -10,7 +10,7 @@ Behave automatically looks for this file and calls these functions:
 SDK patches these to track test events for BrowserStack.
 """
 
-def before_all(context):
+def before_all():
     """Runs once before all scenarios"""
     print("Starting test run...")
 
